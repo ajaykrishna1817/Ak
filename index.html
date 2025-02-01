@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASWIND B R Portfolio</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(to right, #38a169, #4299e1);
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+      animation: fadeIn 2s ease;
+    }
+
+    .header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+    }
+
+    .header nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    .header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .header nav ul li a:hover {
+      color: #ffde59;
+    }
+
+    /* About Section */
+    .section {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #38a169;
+      margin: 0.5rem auto;
+    }
+
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #4299e1;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Projects Section */
+    .project-list {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      animation: slideIn 1.5s ease;
+    }
+
+    .project h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #38a169;
+    }
+
+    .project p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Contact Section */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    ul li a {
+      color: #4299e1;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background: #2d3748;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>ASWIND B R</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <div class="profile-pic">
+        <img src="https://www.jaisamand.co.in/Content/UserMenu/blogs/wp-content/uploads/2024/02/virat-kohli-king-photo_1733b2bdd.jpg" alt=" ">
+      </div>
+      <p>
+        I am ASWIND B R, a 2nd-year Electronics and Communication Engineering student at Sri Krishna College of Technology, Coimbatore. Passionate about electronics, IoT, and sustainable technologies, I aim to innovate and contribute to the field through my academic and personal projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Smart Irrigation System</h3>
+        <p>An IoT-based project for efficient water usage in agriculture, integrating soil moisture sensors and real-time data monitoring.</p>
+      </div>
+      <div class="project">
+        <h3>Automated Street Lighting</h3>
+        <p>A system that uses motion sensors and light intensity detectors to optimize energy consumption in street lighting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via the following channels:</p>
+    <ul>
+      <li>Email: <a href="mailto:ece.student@example.com">ece.student@example.com</a></li>
+      <li>Phone: +91-9876543210</li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/ece-student" target="_blank">linkedin.com/in/ece-student</a></li>
+      <li>GitHub: <a href="https://github.com/ece-student" target="_blank">github.com/ece-student</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 ASWIND B R. All rights reserved.</p>
+  </footer>
+</body>
+</html>
